@@ -1,0 +1,144 @@
+/**
+ * ©2020 - Thomaz Studio. All rights reserved.
+ * Css Grid framework and more.
+ * @JoaoThomazz @DanielSpinard
+ * Unlicensed product, forbidden for sale.
+ */
+
+
+/**
+ * Reset index
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/**
+ * Container
+ */
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 0;
+    }
+}
+
+
+/**
+ * Rows
+ */
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row:before,
+.row::after {
+    content: "";
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
+
+
+/**
+ * Colums
+ */
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+}
+
+
+/**
+ * 2 colums
+ */
+
+@media (min-width:480px) {
+    .col-2 {
+        width: 50%;
+    }
+}
+
+
+/**
+ * 3 colums
+ */
+
+@media (min-width:728px) {
+    .col-3 {
+        width: 33.3333%;
+    }
+}
+
+
+/**
+ * 4 colums
+ */
+
+@media (min-width:920px) {
+    .col-4 {
+        width: 25%;
+    }
+}
+
+
+/**
+ * 5 colums
+ */
+
+@media (min-width:920px) {
+    .col-5 {
+        width: 20%;
+    }
+}
+
+
+/**
+ * 6 colums
+ */
+
+@media (min-width:920px) {
+    .col-6 {
+        width: 16.6666%;
+    }
+}
+
+
+/**
+ * Sidebar
+ */
+
+@media (min-width:992px) {
+    .col-content {
+        width: 50%;
+    }
+    .col-side {
+        width: 50%;
+    }
+}
